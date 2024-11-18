@@ -9,11 +9,9 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: "Trebuchet MS", "Lucida Sans Unicode', 'Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            font-family: lucica, serif;
         }
         body {
-            display: flex;
-            flex-direction: column;
             align-items: center;
             background: url('background.jpg') no-repeat center center/cover; /* Replace with your background image */
             color: #CCFFFF;
@@ -22,6 +20,7 @@
         header {
             background-color: rgba(70, 130, 180, 0.7); /* Semi-transparent header */
             width: 100%;
+            height: 30px;
             padding: 20px 0;
             color: #110000;
         }
@@ -30,7 +29,8 @@
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
             color: #006633;
             border-radius: 10px;
-            margin: 20px;
+            margin: auto;
+            margin-top: 10px;
             padding: 20px;
             width: 80%;
             max-width: 600px;
@@ -47,10 +47,11 @@
             color: #CCFFFF;
             border: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: transform 0.3s ease;
         }
         button:hover {
-            opacity: 0.6;
+            transform: scale(1.2);
+            cursor: zoom-out;
         }
         img {
             max-width: 100px;
@@ -74,7 +75,6 @@
         <button onclick="showSection('about')">About Me</button>
         <button onclick="showSection('contact')">Contact</button>
 </header>
-
     <section id="home" class="active">
         <img src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/466143774_551684074174051_1046687734919794479_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHRrgo2gahYBJYfC840qgcxAhq64U-WeJYCGrrhT5Z4lnAcDKBBLF7fOAAINoNOW-0E-5R0XONMpjXtM8G-HkZK&_nc_ohc=AUC1GEwzjukQ7kNvgFdkKUn&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=AgLh9HuSodlaay5qelXtcul&oh=00_AYBDe-G_4-Pi5X_Utr-iP7_PWxc451rEvGKeRr5P6_A_qg&oe=673D3DFC" alt="Profile Picture">
          <p>Hello! I'm Aviona, i love the challenge of coding and it allows me to  collaborate with others, i also enjoy because there is always something new to learn. Welcome to my profile!</p>
@@ -100,8 +100,6 @@
     <section id="contact">
           <h2>E-mail</h2
            <h3>avrinamad143@gmail.com</h3>
-          <h2>Facebook</h2
-           <h3>Princess Aviona Amad</h3>
           <h2>Contact Number</h2
            <h3>+63 953 408 3215</h3>
     </section>
