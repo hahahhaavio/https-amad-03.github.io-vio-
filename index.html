@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode', 'Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('background.jpg') no-repeat center center/cover; /* Replace with your background image */
+            color: #CCFFFF;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(70, 130, 180, 0.8); /* Semi-transparent header */
+            width: 100%;
+            padding: 20px 0;
+            color: #110000;
+        }
+        section {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            color: #006633;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section.active {
+            display: block;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #110000;
+            color: #CCFFFF;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #110000;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+  <header>
+   </header>  
+    </div>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <section id="home" class="active">
+        <img src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/466143774_551684074174051_1046687734919794479_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHRrgo2gahYBJYfC840qgcxAhq64U-WeJYCGrrhT5Z4lnAcDKBBLF7fOAAINoNOW-0E-5R0XONMpjXtM8G-HkZK&_nc_ohc=AUC1GEwzjukQ7kNvgFdkKUn&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=AgLh9HuSodlaay5qelXtcul&oh=00_AYBDe-G_4-Pi5X_Utr-iP7_PWxc451rEvGKeRr5P6_A_qg&oe=673D3DFC" alt="Profile Picture">
+         <p>Hello! I'm Aviona, i love the challenge of coding and it allows me to  collaborate with others, i also enjoy because there is always something new to learn. Welcome to my profile!</p>
+        <h3>Full Name</h3>
+          <p>Princess Aviona R. Amad</p>
+        <h3>School</h3>
+          <p>Antipolo City Senior High School</p>
+       <h3>Grade/Section</h3>
+          <p>11- ICT 1102</p>
+    </section>
+    <section id="about">
+           <h3>Hobbies</h3>
+            <p>Reading</p>
+            <p>Watching Documentaries</p>
+            </div>
+            <h2>Favorite Song</h2>            
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/10nyNJ6zNy2YVYLrcwLccB?si=kngtbjJDQQKNjygUtjW14Q" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+             </audio>
+            <h2>Watch My Favorite Anime</h2>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/HDeixdqAI6M" title="Your Name (Kimi no Na wa) - Full Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+    </section>
+    <section id="contact">
+          <h2>E-mail</h2
+           <h3>avrinamad143@gmail.com</h3>
+          <h2>Facebook</h2
+           <h3>Princess Aviona Amad</h3>
+          <h2>Contact Number</h2
+           <h3>+63 953 408 3215</h3>
+    </section>
+</body>
+</html>
+
+
